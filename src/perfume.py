@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 #学習時に使ったのと同じ学習済みモデルをインポート
 from torchvision.models import densenet121
-feature = densenet121(pretrained=True)
+feature = densenet121(weights='DEFAULT')
 
 # 1. リサイズ変換を定義
 transform = transforms.Compose([
